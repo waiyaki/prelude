@@ -26,7 +26,11 @@
 
 (while (setq custom-package (pop custom-packages))
   (unless (package-installed-p custom-package)
-    (package-install custom-package)))
+    (condition-case nil
+      (package-install custom-package)
+      (error
+        (package-refresh-contents)
+        (package-install custom-package)))))
 
 
 ;; Set up path and other vars better on macOS
