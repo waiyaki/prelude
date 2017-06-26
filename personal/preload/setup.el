@@ -17,6 +17,8 @@
 (setq custom-packages
     (list
        'wakatime-mode
+       'monokai-alt-theme
+       'neotree
 
        ;; Python
        'elpy 'py-autopep8 'ein
