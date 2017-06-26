@@ -64,10 +64,6 @@
 
 
 (add-hook 'web-mode-hook (lambda () (tern-mode t)))
-(eval-after-load 'tern
-  '(prog
-     (tern-ac-setup)
-     (setq tern-ac-on-dot t)))
 
 (defun eslint-fix-file ()
   (interactive)
