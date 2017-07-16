@@ -19,6 +19,7 @@
        'wakatime-mode
        'monokai-alt-theme
        'neotree
+       'multiple-cursors
 
        ;; Python
        'elpy 'py-autopep8 'ein
