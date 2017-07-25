@@ -21,6 +21,9 @@
        'neotree
        'multiple-cursors
 
+       ;; Scheme
+       'geiser
+
        ;; Python
        'elpy 'py-autopep8 'ein
 
