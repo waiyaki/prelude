@@ -20,6 +20,7 @@
        'monokai-alt-theme
        'neotree
        'multiple-cursors
+       'aggressive-indent
 
        ;; Scheme
        'geiser
@@ -33,14 +34,14 @@
 (while (setq custom-package (pop custom-packages))
   (unless (package-installed-p custom-package)
     (condition-case nil
-      (package-install custom-package)
+        (package-install custom-package)
       (error
-        (package-refresh-contents)
-        (package-install custom-package)))))
+       (package-refresh-contents)
+       (package-install custom-package)))))
 
-
-;; Set up path and other vars better on macOS
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
+;; Setup window size if running in graphic mode
+(if (display-graphic-p)
+    (setq initial-frame-alist
+          '((top . 300) (left . 400) (width . 130) (height . 30))))
 
 (provide 'setup)
