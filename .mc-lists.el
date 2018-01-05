@@ -4,11 +4,14 @@
 (setq mc/cmds-to-run-for-all
       '(
         crux-move-beginning-of-line
+        markdown-cycle
+        markdown-enter-key
         slime-compile-defun
         ))
 
 (setq mc/cmds-to-run-once
       '(
         helm-M-x
+        markdown-outdent-or-delete
         sp-backward-delete-char
         ))
