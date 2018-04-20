@@ -1,14 +1,9 @@
 ;; enable line numbers
 (global-linum-mode t)
 
-
 ;; Enable wakatime
 (require 'wakatime-mode)
 (global-wakatime-mode t)
-
-;; Enable git-gutter
-(global-git-gutter-mode t)
-(git-gutter:linum-setup)
 
 ;; Enable git-commit-mode globally
 (global-git-commit-mode t)

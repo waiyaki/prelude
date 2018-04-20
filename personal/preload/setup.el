@@ -15,7 +15,7 @@
 (package-initialize)
 
 (setq custom-packages
-    (list
+      (list
        'wakatime-mode
        'monokai-alt-theme
        'neotree

@@ -13,7 +13,8 @@
 (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
 ;; Use Ipython
-(elpy-use-ipython)
+(setq python-shell-interpreter "ipython"
+      python-shell-interpreter-args "-i --simple-prompt")
 
 ;; Jupyter notebook
 (require 'ein)
