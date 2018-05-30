@@ -18,6 +18,7 @@
       (list
        'wakatime-mode
        'monokai-alt-theme
+       'dracula-theme
        'neotree
        'multiple-cursors
        'aggressive-indent
