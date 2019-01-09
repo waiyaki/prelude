@@ -5,5 +5,5 @@
 (setq cider-repl-wrap-history t)
 
 ;; Use clojure mode for other extensions
-(add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
-(add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))
+; (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
+; (add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))

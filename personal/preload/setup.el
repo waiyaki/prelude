@@ -8,10 +8,6 @@
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 
-;; elpy
-(add-to-list 'package-archives
-             '("elpy" . "http://jorgenschaefer.github.io/packages/"))
-
 (package-initialize)
 
 (setq custom-packages
@@ -21,16 +17,7 @@
        'dracula-theme
        'neotree
        'multiple-cursors
-       'aggressive-indent
-
-       ;; Scheme
-       'geiser
-
-       ;; Python
-       'elpy 'py-autopep8 'ein
-
-       ;; JavaScript
-       'web-mode 'emmet-mode  'company-tern))
+       'aggressive-indent))
 
 (while (setq custom-package (pop custom-packages))
   (unless (package-installed-p custom-package)
