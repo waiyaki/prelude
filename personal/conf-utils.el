@@ -22,4 +22,13 @@
 (setq-default cursor-type 'bar)
 (set-cursor-color "#ffff00")
 
+;; Mark sexp
+(global-set-key (kbd "C-c m") 'sp-mark-sexp)
+
+;; Copy sexp
+(global-set-key (kbd "C-c C-y") 'sp-copy-sexp)
+
+;; Hide scrollbars
+(toggle-scroll-bar -1)
+
 (provide 'conf-utils)
