@@ -19,6 +19,7 @@
        'multiple-cursors
        'aggressive-indent
        'all-the-icons
+       'doom-themes
        'doom-modeline))
 
 (while (setq custom-package (pop custom-packages))
