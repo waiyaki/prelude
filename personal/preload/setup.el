@@ -17,7 +17,9 @@
        'dracula-theme
        'neotree
        'multiple-cursors
-       'aggressive-indent))
+       'aggressive-indent
+       'all-the-icons
+       'doom-modeline))
 
 (while (setq custom-package (pop custom-packages))
   (unless (package-installed-p custom-package)

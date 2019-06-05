@@ -11,7 +11,10 @@
 
 (setq mc/cmds-to-run-once
       '(
+        ace-window
         helm-M-x
         markdown-outdent-or-delete
+        mouse-set-region
         sp-backward-delete-char
+        swiper
         ))
