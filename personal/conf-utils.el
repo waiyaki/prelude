@@ -1,3 +1,12 @@
+;; Enable indentation guides
+(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
+(setq highlight-indent-guides-method 'character)
+(setq highlight-indent-guides-delay 0)
+(setq highlight-indent-guides-responsive 'top)
+
+;; Enable smart-parens strict mode
+(smartparens-global-strict-mode t)
+
 ;; enable line numbers
 (global-linum-mode t)
 
@@ -26,10 +35,12 @@
 ;; (global-aggressive-indent-mode t)
 
 ;; Set font and theme when in graphic mode
-(load-theme 'monokai-alt t)
 
 (if (display-graphic-p)
-    (set-face-attribute 'default nil :family "Fira Code" :height 130 :weight 'light))
+    (progn
+      (set-face-attribute 'default nil :family "Fira Code" :height 130 :weight 'light)
+      (load-theme 'doom-dracula t))
+  (load-theme 'monokai-alt t))
 
 
 (setq-default cursor-type 'bar)

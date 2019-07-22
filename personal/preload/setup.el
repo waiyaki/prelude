@@ -20,7 +20,8 @@
        'aggressive-indent
        'all-the-icons
        'doom-themes
-       'doom-modeline))
+       'doom-modeline
+       'highlight-indent-guides))
 
 (while (setq custom-package (pop custom-packages))
   (unless (package-installed-p custom-package)
@@ -31,7 +32,7 @@
        (package-install custom-package)))))
 
 ;; Setup window size if running in graphic mode
-(if (display-graphic-p)
+(when (display-graphic-p)
     (setq initial-frame-alist
           '((top . 300) (left . 400) (width . 130) (height . 30))))
 
