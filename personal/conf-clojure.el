@@ -1,3 +1,7 @@
+;; Sexp-fu
+(require 'cider-eval-sexp-fu)
+(setq eval-sexp-fu-flash-duration 0.25)
+
 ;; Where to store the cider history.
 (setq cider-repl-history-file "~/.emacs.d/cider-history")
 

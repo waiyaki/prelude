@@ -28,6 +28,10 @@
 (require 'doom-modeline)
 (doom-modeline-mode t)
 
+;; Emmet mode
+(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
+(add-hook 'web-mode 'emmet-mode)
 
 ;; Enable aggressive indent globally
 ;;; Temporary disable this since it seems to align more code than is touched in
@@ -38,7 +42,7 @@
 
 (if (display-graphic-p)
     (progn
-      (set-face-attribute 'default nil :family "Fira Code" :height 130 :weight 'light)
+      (set-face-attribute 'default nil :family "Operator Mono" :height 125 :weight 'light)
       (load-theme 'doom-dracula t))
   (load-theme 'monokai-alt t))
 

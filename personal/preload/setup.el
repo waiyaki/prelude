@@ -21,7 +21,9 @@
        'all-the-icons
        'doom-themes
        'doom-modeline
-       'highlight-indent-guides))
+       'highlight-indent-guides
+       'cider-eval-sexp-fu
+       'emmet-mode))
 
 (while (setq custom-package (pop custom-packages))
   (unless (package-installed-p custom-package)
