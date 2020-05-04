@@ -11,6 +11,7 @@
 ;; Clojure indent to always indent
 (setq clojure-indent-style 'always-indent)
 
+(setq nrepl-use-ssh-fallback-for-remote-hosts t)
 ;; Use clojure mode for other extensions
 ; (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
 ; (add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))
