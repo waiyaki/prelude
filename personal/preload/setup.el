@@ -8,8 +8,6 @@
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 
-(package-initialize)
-
 (setq custom-packages
       (list
        'wakatime-mode
