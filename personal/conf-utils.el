@@ -17,16 +17,16 @@
 ;; Enable git-commit-mode globally
 (global-git-commit-mode t)
 
-;; all the icons
-(require 'all-the-icons)
+;; ;; all the icons
+;; (require 'all-the-icons)
 
-;; doom themes
-(require 'doom-themes)
-(doom-themes-neotree-config)
+;; ;; doom themes
+;; (require 'doom-themes)
+;; (doom-themes-neotree-config)
 
-;; Doom modeline
-(require 'doom-modeline)
-(doom-modeline-mode t)
+;; ;; Doom modeline
+;; (require 'doom-modeline)
+;; (doom-modeline-mode 1)
 
 ;; Emmet mode
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
@@ -42,7 +42,11 @@
 
 (if (display-graphic-p)
     (progn
-      (set-face-attribute 'default nil :family "Operator Mono" :height 125 :weight 'light)
+      (set-face-attribute
+       'default nil
+       :family "Operator Mono"
+       :height 130
+       :weight 'extra-light)
       (load-theme 'doom-dracula t))
   (load-theme 'monokai-alt t))
 
